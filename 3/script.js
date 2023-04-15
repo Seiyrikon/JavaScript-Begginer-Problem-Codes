@@ -1,6 +1,9 @@
 const btn = document.getElementById("btn"),
       tryAgain = document.getElementById("try-again"),
-      displayArea = document.getElementById("area");
+      displayArea = document.getElementById("area"),
+      first = document.getElementById("a"),
+      second = document.getElementById("b"),
+      third = document.getElementById("c");
 
 function calculateArea(a, b ,c) {
     
@@ -17,7 +20,13 @@ function calculateArea(a, b ,c) {
     let area = Math.sqrt(sides*(sides-a)*(sides-b)*(sides-c));
     let fixedArea = Number(area.toFixed(3));
 
-    displayArea.innerText = `The area of triangle with the sides of ${a}, ${b}, and ${c} is ${fixedArea}`;
+    first.innerText = `First Side: ${a}`;
+    second.innerText = `First Side: ${b}`;
+    third.innerText = `First Side: ${c}`;
+    displayArea.innerText = `Area is: ${fixedArea}`;
+    first.style.display = "inline";
+    second.style.display = "inline";
+    third.style.display = "inline";
     displayArea.style.display = "inline";
     tryAgain.style.display = "inline";
 
