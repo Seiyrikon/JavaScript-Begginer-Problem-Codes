@@ -5,7 +5,7 @@ const startButton = document.getElementById("start"),
 
 function getRandomInt(max, guess) {
 
-    max = window.prompt("Enter a number");
+    max = window.prompt("Enter a number to guess in between");
     number = Math.floor(Math.random() * max);
     console.log(number);
     guess = Number(window.prompt("Guess the number"));
@@ -18,8 +18,12 @@ function getRandomInt(max, guess) {
 
 function checkAnswer() {
     if (answer === number) {
-        document.getElementById("h2").innerText = `Good work! The number to guess is ${number} and your answer is ${answer}. We can conclude that your intuition is strong.`;
+        document.getElementById("h3").innerText = 'Good Work!'
+        document.getElementById("firsth2").innerText = `The number to guess is: ${number}`;
+        document.getElementById("secondh2").innerText = `Your answer is: ${answer}`;
     } else {
-        document.getElementById("h2").innerText = `Not matched. The number to guess is ${number} and your answer is ${answer}. Nice try though.`;
+        document.getElementById("h3").innerText = 'Not matched.'
+        document.getElementById("firsth2").innerText = `The number to guess is: ${number}`;
+        document.getElementById("secondh2").innerText = `Your answer is: ${answer}`;
     }
 }
