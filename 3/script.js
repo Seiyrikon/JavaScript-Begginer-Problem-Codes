@@ -21,8 +21,8 @@ function calculateArea(a, b ,c) {
     let fixedArea = Number(area.toFixed(3));
 
     first.innerText = `First Side: ${a}`;
-    second.innerText = `First Side: ${b}`;
-    third.innerText = `First Side: ${c}`;
+    second.innerText = `Second Side: ${b}`;
+    third.innerText = `Third Side: ${c}`;
     displayArea.innerText = `Area is: ${fixedArea}`;
     first.style.display = "inline";
     second.style.display = "inline";
