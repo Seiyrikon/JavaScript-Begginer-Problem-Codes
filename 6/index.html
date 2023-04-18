@@ -7,10 +7,12 @@
     <title>January 1st Sunday Checker</title>
 </head>
 <body style="background-color: #121212; color: white; text-align: center; margin-top: 200px;">
-    <h1>January 1st Sunday Checker</h1>
+    <h1 id="title">January 1st Sunday Checker</h1>
     <h2 id="msgContainer"></h2>
     <input type="text" placeholder="Enter a year" id="year">
-    <button onclick="dayChecker(), yearLoop()">Check</button>
+    <button onclick="dayChecker()" id="check">Check</button>
+    <button onclick="yearLoop()" id="list">List years</button>
+    <button onclick="reload()" id="reload" style="display: none;">Clear</button>
     <script src="script.js"></script>
 </body>
 </html>
